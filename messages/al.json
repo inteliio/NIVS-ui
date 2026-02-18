@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Kryefaqe",
+    "products": "Produktet",
+    "about": "Rreth nesh",
+    "contact": "Kontakt",
+    "faq": "Pyetje"
+  },
+  "home": {
+    "title": "NIVS Group",
+    "subtitle": "Import dhe shpërndarje",
+    "aboutTitle": "Rreth nesh",
+    "aboutShort": "NIVS Group është e specializuar në import dhe shpërndarje, duke u shërbyer tregjeve dhe dyqaneve lokale me një gamë të gjerë produktesh. Jemi të përkushtuar ndaj cilësisë dhe partneriteteve të besueshme.",
+    "aboutLink": "Mëso më shumë",
+    "stats": {
+      "clients": "Klientë",
+      "products": "Produkte",
+      "years": "Vite në industri"
+    },
+    "partners": "Partnerët tanë",
+    "testimonials": "Dëshmitë"
+  },
+  "products": {
+    "title": "Brendet tona",
+    "viewProducts": "Shiko produktet"
+  },
+  "about": {
+    "title": "Rreth nesh",
+    "content": "NIVS Group është një kompani e specializuar në import dhe shpërndarje, duke u shërbyer tregjeve dhe dyqaneve lokale me një gamë të gjerë produktesh. Me vite përvojë në industri, jemi të përkushtuar ndaj cilësisë dhe partneriteteve të besueshme."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "department": "Departamenti",
+    "email": "Email",
+    "phone": "Telefon",
+    "marketing": "Marketing",
+    "sales": "Shitjet",
+    "logistics": "Logjistika"
+  },
+  "faq": {
+    "title": "Pyetje të bëra shpesh",
+    "q1": "Si mund të bëj një porosi?",
+    "a1": "Kontaktoni departamentin tonë të shitjeve me email ose telefon. Do t'ju udhëzojmë në proces.",
+    "q2": "Cilat janë kushtet e dorëzimit?",
+    "a2": "Dorëzojmë në të gjithë vendin. Kushtet varen nga madhësia e porosisë dhe lokacioni. Kontaktoni logjistikën për detaje.",
+    "q3": "A punoni me tregtarë të rinj?",
+    "a3": "Po. Mirëpresim partnerë të rinj. Lidhuni me ekipin tonë të shitjeve ose marketingut për të diskutuar opsionet."
+  },
+  "footer": {
+    "copyright": "© {year} NIVS Group. Të gjitha të drejtat e rezervuara."
+  }
+}

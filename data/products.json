@@ -1,0 +1,55 @@
+{
+  "brand-one": [
+    {
+      "id": "prod-1",
+      "name": "Product Alpha",
+      "slug": "product-alpha",
+      "description": "High-quality product from Brand One. Ideal for retail and wholesale.",
+      "images": [
+        "/images/placeholder.svg",
+        "/images/placeholder.svg",
+        "/images/placeholder.svg"
+      ],
+      "nutrition": [
+        { "label": "Energy", "value": "250 kcal", "per": "100g" },
+        { "label": "Fat", "value": "12 g", "per": "100g" },
+        { "label": "Carbohydrates", "value": "30 g", "per": "100g" },
+        { "label": "Protein", "value": "8 g", "per": "100g" }
+      ]
+    },
+    {
+      "id": "prod-2",
+      "name": "Product Beta",
+      "slug": "product-beta",
+      "description": "Another great product from Brand One.",
+      "images": [
+        "/images/placeholder.svg",
+        "/images/placeholder.svg"
+      ],
+      "nutrition": [
+        { "label": "Energy", "value": "180 kcal", "per": "100g" },
+        { "label": "Fat", "value": "5 g", "per": "100g" },
+        { "label": "Carbohydrates", "value": "28 g", "per": "100g" },
+        { "label": "Protein", "value": "6 g", "per": "100g" }
+      ]
+    }
+  ],
+  "brand-two": [
+    {
+      "id": "prod-3",
+      "name": "Product Gamma",
+      "slug": "product-gamma",
+      "description": "Premium product from Brand Two.",
+      "images": [
+        "/images/placeholder.svg"
+      ],
+      "nutrition": [
+        { "label": "Energy", "value": "320 kcal", "per": "100g" },
+        { "label": "Fat", "value": "18 g", "per": "100g" },
+        { "label": "Carbohydrates", "value": "35 g", "per": "100g" },
+        { "label": "Protein", "value": "10 g", "per": "100g" }
+      ]
+    }
+  ],
+  "brand-three": []
+}

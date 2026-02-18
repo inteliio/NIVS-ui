@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "home": {
+    "title": "NIVS Group",
+    "subtitle": "Import and distribution",
+    "aboutTitle": "About us",
+    "aboutShort": "NIVS Group is specialized in import and distribution, serving markets and local stores with a wide range of products. We are committed to quality and reliable partnerships.",
+    "aboutLink": "Learn more",
+    "stats": {
+      "clients": "Clients",
+      "products": "Products",
+      "years": "Years in industry"
+    },
+    "partners": "Our partners",
+    "testimonials": "Testimonials"
+  },
+  "products": {
+    "title": "Our brands",
+    "viewProducts": "View products"
+  },
+  "about": {
+    "title": "About Us",
+    "content": "NIVS Group is a company specialized in import and distribution, serving markets and local stores with a wide range of products. With years of experience in the industry, we are committed to quality and reliable partnerships."
+  },
+  "contact": {
+    "title": "Contact",
+    "department": "Department",
+    "email": "Email",
+    "phone": "Phone",
+    "marketing": "Marketing",
+    "sales": "Sales",
+    "logistics": "Logistics"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "q1": "How can I place an order?",
+    "a1": "Contact our sales department by email or phone. We will guide you through the process.",
+    "q2": "What are your delivery terms?",
+    "a2": "We deliver nationwide. Terms depend on order size and location. Contact logistics for details.",
+    "q3": "Do you work with new retailers?",
+    "a3": "Yes. We welcome new partners. Get in touch with our sales or marketing team to discuss options."
+  },
+  "footer": {
+    "copyright": "© {year} NIVS Group. All rights reserved."
+  }
+}

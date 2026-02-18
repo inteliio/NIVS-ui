@@ -1,0 +1,20 @@
+[
+  {
+    "id": "marketing",
+    "nameKey": "marketing",
+    "email": "marketing@nivsgroup.com",
+    "phone": "+389 70 123 456"
+  },
+  {
+    "id": "sales",
+    "nameKey": "sales",
+    "email": "sales@nivsgroup.com",
+    "phone": "+389 70 234 567"
+  },
+  {
+    "id": "logistics",
+    "nameKey": "logistics",
+    "email": "logistics@nivsgroup.com",
+    "phone": "+389 70 345 678"
+  }
+]

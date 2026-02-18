@@ -1,0 +1,17 @@
+[
+  {
+    "id": "faq1",
+    "questionKey": "q1",
+    "answerKey": "a1"
+  },
+  {
+    "id": "faq2",
+    "questionKey": "q2",
+    "answerKey": "a2"
+  },
+  {
+    "id": "faq3",
+    "questionKey": "q3",
+    "answerKey": "a3"
+  }
+]

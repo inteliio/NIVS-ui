@@ -1,0 +1,20 @@
+[
+  {
+    "id": "brand-1",
+    "name": "Brand One",
+    "slug": "brand-one",
+    "logo": "/images/placeholder.svg"
+  },
+  {
+    "id": "brand-2",
+    "name": "Brand Two",
+    "slug": "brand-two",
+    "logo": "/images/placeholder.svg"
+  },
+  {
+    "id": "brand-3",
+    "name": "Brand Three",
+    "slug": "brand-three",
+    "logo": "/images/placeholder.svg"
+  }
+]
