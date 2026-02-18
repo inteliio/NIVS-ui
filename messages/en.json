@@ -48,5 +48,8 @@
   },
   "footer": {
     "copyright": "© {year} NIVS Group. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading…"
   }
 }

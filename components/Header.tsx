@@ -39,13 +39,14 @@ export default function Header({ locale }: { locale: string }) {
 
   const mobileMenu = mobileOpen && (
     <>
+      {/* Overlay only below navbar so navbar stays white and visible */}
       <div
-        className="fixed inset-0 z-[100] bg-overlay md:hidden"
+        className="fixed top-[3.5rem] inset-x-0 bottom-0 z-[100] bg-overlay md:hidden"
         aria-hidden
         onClick={() => setMobileOpen(false)}
       />
       <nav
-        className="fixed inset-x-0 top-[3.5rem] z-[110] max-h-[calc(100vh-3.5rem)] overflow-y-auto border-b border-border bg-surface px-4 py-4 md:hidden"
+        className="fixed inset-x-0 top-[3.5rem] z-[110] max-h-[calc(100vh-3.5rem)] overflow-y-auto border-b border-border bg-white px-4 py-4 shadow-lg md:hidden"
         aria-label="Main navigation"
       >
         <div className="flex flex-col gap-1">
@@ -87,7 +88,7 @@ export default function Header({ locale }: { locale: string }) {
   );
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur">
+    <header className="sticky top-0 z-[120] border-b border-border bg-white md:z-50 md:bg-surface/95 md:backdrop-blur">
       <div className="mx-auto flex h-14 min-h-[3.5rem] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link href="/" className="shrink-0 text-lg font-bold text-foreground sm:text-xl">
           NIVS Group
