@@ -31,19 +31,19 @@ export default async function BrandProductsPage({
   const products = productsByBrand[brandSlug] ?? [];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <nav className="mb-6 text-sm text-gray-500">
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <nav className="mb-4 flex flex-wrap items-center gap-x-2 text-sm text-gray-500 sm:mb-6">
         <Link href="/proizvodi" className="hover:text-gray-900">
           {t('title')}
         </Link>
-        <span className="mx-2">/</span>
+        <span>/</span>
         <span className="text-gray-900">{brand.name}</span>
       </nav>
-      <h1 className="mb-8 text-3xl font-bold text-gray-900">{brand.name}</h1>
+      <h1 className="mb-6 text-2xl font-bold text-gray-900 sm:mb-8 sm:text-3xl">{brand.name}</h1>
       {products.length === 0 ? (
-        <p className="text-gray-500">No products for this brand yet.</p>
+        <p className="text-sm text-gray-500 sm:text-base">No products for this brand yet.</p>
       ) : (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {products.map((product) => (
             <ProductCard
               key={product.id}

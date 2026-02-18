@@ -23,13 +23,13 @@ export default async function ContactPage({
   const t = await getTranslations('contact');
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
-      <h1 className="mb-8 text-3xl font-bold text-gray-900">{t('title')}</h1>
-      <div className="space-y-8">
+    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <h1 className="mb-6 text-2xl font-bold text-gray-900 sm:mb-8 sm:text-3xl">{t('title')}</h1>
+      <div className="space-y-4 sm:space-y-8">
         {departments.map((dept) => (
           <section
             key={dept.id}
-            className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+            className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm sm:p-6"
           >
             <h2 className="text-lg font-semibold text-gray-900">
               {t(dept.nameKey as 'marketing' | 'sales' | 'logistics')}

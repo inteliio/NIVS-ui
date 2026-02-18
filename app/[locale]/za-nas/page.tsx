@@ -15,9 +15,9 @@ export default async function AboutPage({
   const t = await getTranslations('about');
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
-      <h1 className="mb-8 text-3xl font-bold text-gray-900">{t('title')}</h1>
-      <div className="prose prose-gray max-w-none">
+    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <h1 className="mb-6 text-2xl font-bold text-gray-900 sm:mb-8 sm:text-3xl">{t('title')}</h1>
+      <div className="prose prose-gray max-w-none prose-p:text-sm sm:prose-p:text-base">
         <p className="whitespace-pre-line text-gray-700">{t('content')}</p>
       </div>
     </div>

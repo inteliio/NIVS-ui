@@ -19,18 +19,19 @@ export default function FAQAccordion({ items }: { items: Item[] }) {
             <button
               type="button"
               onClick={() => setOpenId(isOpen ? null : item.id)}
-              className="flex w-full items-center justify-between px-4 py-3 text-left font-medium text-gray-900 transition hover:bg-gray-50"
+              className="flex min-h-[2.75rem] w-full touch-manipulation items-center justify-between gap-3 px-4 py-3 text-left text-sm font-medium text-gray-900 transition hover:bg-gray-50 sm:text-base"
               aria-expanded={isOpen}
             >
-              {item.question}
+              <span className="min-w-0 flex-1">{item.question}</span>
               <span
-                className={`ml-2 shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                className={`shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                aria-hidden
               >
                 ▼
               </span>
             </button>
             {isOpen && (
-              <div className="border-t border-gray-200 px-4 py-3 text-gray-600">
+              <div className="border-t border-gray-200 px-4 py-3 text-sm text-gray-600 sm:text-base">
                 {item.answer}
               </div>
             )}

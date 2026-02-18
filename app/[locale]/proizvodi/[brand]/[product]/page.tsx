@@ -53,32 +53,33 @@ export default async function ProductPage({
   const nutrition = product.nutrition ?? [];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <nav className="mb-6 text-sm text-gray-500">
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <nav className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-500 sm:mb-6">
         <Link href="/proizvodi" className="hover:text-gray-900">
           {t('title')}
         </Link>
-        <span className="mx-2">/</span>
+        <span>/</span>
         <Link href={`/proizvodi/${brandSlug}`} className="hover:text-gray-900">
           {brand.name}
         </Link>
-        <span className="mx-2">/</span>
-        <span className="text-gray-900">{product.name}</span>
+        <span>/</span>
+        <span className="truncate text-gray-900">{product.name}</span>
       </nav>
 
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
         <ProductGallery images={images} />
-        <div>
-          <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
+        <div className="min-w-0">
+          <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">{product.name}</h1>
           {product.description && (
-            <p className="mt-4 text-gray-600">{product.description}</p>
+            <p className="mt-3 text-sm text-gray-600 sm:mt-4 sm:text-base">{product.description}</p>
           )}
           {nutrition.length > 0 && (
-            <div className="mt-8">
-              <h2 className="mb-4 text-lg font-semibold text-gray-900">
+            <div className="mt-6 sm:mt-8">
+              <h2 className="mb-3 text-base font-semibold text-gray-900 sm:mb-4 sm:text-lg">
                 Nutritional values
               </h2>
-              <table className="w-full border-collapse border border-gray-200">
+              <div className="overflow-x-auto">
+              <table className="w-full min-w-[240px] border-collapse border border-gray-200">
                 <thead>
                   <tr className="bg-gray-50">
                     <th className="border border-gray-200 px-4 py-2 text-left text-sm font-medium text-gray-900">
@@ -102,6 +103,7 @@ export default async function ProductPage({
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
         </div>

@@ -39,13 +39,13 @@ export default async function HomePage({
 async function AboutSection() {
   const t = await getTranslations('home');
   return (
-    <section className="border-b border-gray-200 bg-white py-12">
+    <section className="border-b border-gray-200 bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-semibold text-gray-900">{t('aboutTitle')}</h2>
-        <p className="mt-4 text-gray-600">{t('aboutShort')}</p>
+        <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">{t('aboutTitle')}</h2>
+        <p className="mt-3 text-sm text-gray-600 sm:mt-4 sm:text-base">{t('aboutShort')}</p>
         <Link
           href="/za-nas"
-          className="mt-6 inline-block font-medium text-gray-900 underline decoration-gray-400 underline-offset-4 transition hover:decoration-gray-900"
+          className="mt-4 inline-block font-medium text-gray-900 underline decoration-gray-400 underline-offset-4 transition hover:decoration-gray-900 sm:mt-6"
         >
           {t('aboutLink')}
         </Link>
@@ -57,13 +57,13 @@ async function AboutSection() {
 async function StatsSection() {
   const t = await getTranslations('home.stats');
   return (
-    <section className="border-y border-gray-200 bg-gray-50 py-12">
+    <section className="border-y border-gray-200 bg-gray-50 py-8 sm:py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
           {STATS.map(({ key, value }) => (
             <div key={key} className="text-center">
-              <p className="text-3xl font-bold text-gray-900 sm:text-4xl">{value}</p>
-              <p className="mt-1 text-sm font-medium text-gray-600">{t(key)}</p>
+              <p className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">{value}</p>
+              <p className="mt-1 text-xs font-medium text-gray-600 sm:text-sm">{t(key)}</p>
             </div>
           ))}
         </div>
@@ -76,16 +76,16 @@ async function PartnersSection() {
   const t = await getTranslations('home');
   const partners = brandsData.slice(0, 6).map((b) => ({ logo: b.logo, name: b.name }));
   return (
-    <section className="py-16">
+    <section className="py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-2xl font-semibold text-gray-900">{t('partners')}</h2>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-8">
+        <h2 className="text-center text-xl font-semibold text-gray-900 sm:text-2xl">{t('partners')}</h2>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-4 sm:mt-8 sm:gap-8">
           {partners.map((p) => (
             <div
               key={p.name}
-              className="flex h-16 w-32 items-center justify-center rounded-lg bg-gray-100 p-2"
+              className="flex h-14 w-24 items-center justify-center rounded-lg bg-gray-100 p-2 sm:h-16 sm:w-32"
             >
-              <span className="text-sm font-medium text-gray-600">{p.name}</span>
+              <span className="truncate text-xs font-medium text-gray-600 sm:text-sm">{p.name}</span>
             </div>
           ))}
         </div>
@@ -98,17 +98,17 @@ async function TestimonialsSection() {
   const t = await getTranslations('home');
   const testimonials = testimonialsData as { id: string; quote: string; author: string; company: string }[];
   return (
-    <section className="border-t border-gray-200 bg-gray-50 py-16">
+    <section className="border-t border-gray-200 bg-gray-50 py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-2xl font-semibold text-gray-900">{t('testimonials')}</h2>
-        <div className="mt-8 grid gap-8 sm:grid-cols-3">
+        <h2 className="text-center text-xl font-semibold text-gray-900 sm:text-2xl">{t('testimonials')}</h2>
+        <div className="mt-6 grid gap-4 sm:mt-8 sm:grid-cols-3 sm:gap-8">
           {testimonials.map((item) => (
             <blockquote
               key={item.id}
-              className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+              className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm sm:p-6"
             >
-              <p className="text-gray-700">&ldquo;{item.quote}&rdquo;</p>
-              <footer className="mt-4 text-sm font-medium text-gray-900">
+              <p className="text-sm text-gray-700 sm:text-base">&ldquo;{item.quote}&rdquo;</p>
+              <footer className="mt-3 text-xs font-medium text-gray-900 sm:mt-4 sm:text-sm">
                 — {item.author}, {item.company}
               </footer>
             </blockquote>
