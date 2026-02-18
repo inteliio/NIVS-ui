@@ -54,49 +54,49 @@ export default async function ProductPage({
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-      <nav className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-500 sm:mb-6">
-        <Link href="/proizvodi" className="hover:text-gray-900">
+      <nav className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground sm:mb-6">
+        <Link href="/proizvodi" className="hover:text-foreground">
           {t('title')}
         </Link>
         <span>/</span>
-        <Link href={`/proizvodi/${brandSlug}`} className="hover:text-gray-900">
+        <Link href={`/proizvodi/${brandSlug}`} className="hover:text-foreground">
           {brand.name}
         </Link>
         <span>/</span>
-        <span className="truncate text-gray-900">{product.name}</span>
+        <span className="truncate text-foreground">{product.name}</span>
       </nav>
 
       <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
         <ProductGallery images={images} />
         <div className="min-w-0">
-          <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">{product.name}</h1>
+          <h1 className="text-2xl font-bold text-foreground sm:text-3xl">{product.name}</h1>
           {product.description && (
-            <p className="mt-3 text-sm text-gray-600 sm:mt-4 sm:text-base">{product.description}</p>
+            <p className="mt-3 text-sm text-muted-foreground sm:mt-4 sm:text-base">{product.description}</p>
           )}
           {nutrition.length > 0 && (
             <div className="mt-6 sm:mt-8">
-              <h2 className="mb-3 text-base font-semibold text-gray-900 sm:mb-4 sm:text-lg">
+              <h2 className="mb-3 text-base font-semibold text-foreground sm:mb-4 sm:text-lg">
                 Nutritional values
               </h2>
               <div className="overflow-x-auto">
-              <table className="w-full min-w-[240px] border-collapse border border-gray-200">
+              <table className="w-full min-w-[240px] border-collapse border border-border">
                 <thead>
-                  <tr className="bg-gray-50">
-                    <th className="border border-gray-200 px-4 py-2 text-left text-sm font-medium text-gray-900">
+                  <tr className="bg-muted">
+                    <th className="border border-border px-4 py-2 text-left text-sm font-medium text-foreground">
                       Per {nutrition[0]?.per ?? '100g'}
                     </th>
-                    <th className="border border-gray-200 px-4 py-2 text-right text-sm font-medium text-gray-900">
+                    <th className="border border-border px-4 py-2 text-right text-sm font-medium text-foreground">
                       Value
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   {nutrition.map((row) => (
-                    <tr key={row.label} className="hover:bg-gray-50">
-                      <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                    <tr key={row.label} className="hover:bg-muted">
+                      <td className="border border-border px-4 py-2 text-sm text-surface-foreground">
                         {row.label}
                       </td>
-                      <td className="border border-gray-200 px-4 py-2 text-right text-sm text-gray-700">
+                      <td className="border border-border px-4 py-2 text-right text-sm text-surface-foreground">
                         {row.value}
                       </td>
                     </tr>

@@ -2,11 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global layout & styling colors (change here to theme the whole app) */
+:root {
+  /* Page */
+  --color-background: #ffffff;
+  --color-foreground: #111827; /* gray-900 */
+  /* Muted (secondary text, subtle areas) */
+  --color-muted: #f9fafb; /* gray-50 */
+  --color-muted-foreground: #6b7280; /* gray-500 */
+  /* Borders & dividers */
+  --color-border: #ebe7e5; /* gray-200 */
+  /* Cards, header, footer */
+  --color-surface: #ffffff;
+  --color-surface-foreground: #111827; /* gray-900 */
+  /* Primary (brand, active nav, buttons) */
+  --color-primary: #111827; /* gray-900 */
+  --color-primary-foreground: #ffffff;
+  /* Modal / menu overlay */
+  --color-overlay: rgba(0, 0, 0, 0.6);
+}
+
 @layer base {
   html {
     @apply overflow-x-hidden;
   }
   body {
-    @apply overflow-x-hidden;
+    @apply overflow-x-hidden bg-background text-foreground;
   }
 }

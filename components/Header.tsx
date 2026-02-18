@@ -40,12 +40,12 @@ export default function Header({ locale }: { locale: string }) {
   const mobileMenu = mobileOpen && (
     <>
       <div
-        className="fixed inset-0 z-[100] bg-black/60 md:hidden"
+        className="fixed inset-0 z-[100] bg-overlay md:hidden"
         aria-hidden
         onClick={() => setMobileOpen(false)}
       />
       <nav
-        className="fixed inset-x-0 top-[3.5rem] z-[110] max-h-[calc(100vh-3.5rem)] overflow-y-auto border-b border-gray-200 bg-white px-4 py-4 md:hidden"
+        className="fixed inset-x-0 top-[3.5rem] z-[110] max-h-[calc(100vh-3.5rem)] overflow-y-auto border-b border-border bg-surface px-4 py-4 md:hidden"
         aria-label="Main navigation"
       >
         <div className="flex flex-col gap-1">
@@ -54,13 +54,13 @@ export default function Header({ locale }: { locale: string }) {
               key={key}
               href={href}
               onClick={() => setMobileOpen(false)}
-              className="min-h-[2.75rem] rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 transition hover:bg-gray-100"
+              className="min-h-[2.75rem] rounded-lg px-3 py-2.5 text-base font-medium text-surface-foreground transition hover:bg-muted"
             >
               {t(key)}
             </Link>
           ))}
-          <div className="mt-3 border-t border-gray-200 pt-3">
-            <span className="mb-2 block px-3 text-xs font-medium uppercase tracking-wide text-gray-500">
+          <div className="mt-3 border-t border-border pt-3">
+            <span className="mb-2 block px-3 text-xs font-medium uppercase tracking-wide text-muted-foreground">
               Language
             </span>
             <div className="flex gap-2">
@@ -72,8 +72,8 @@ export default function Header({ locale }: { locale: string }) {
                   onClick={() => setMobileOpen(false)}
                   className={`min-h-[2.75rem] flex-1 rounded-lg px-3 py-2.5 text-center text-sm font-medium transition ${
                     locale === code
-                      ? 'bg-gray-900 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-muted text-surface-foreground hover:bg-border'
                   }`}
                 >
                   {label}
@@ -87,9 +87,9 @@ export default function Header({ locale }: { locale: string }) {
   );
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur">
       <div className="mx-auto flex h-14 min-h-[3.5rem] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0 text-lg font-bold text-gray-900 sm:text-xl">
+        <Link href="/" className="shrink-0 text-lg font-bold text-foreground sm:text-xl">
           NIVS Group
         </Link>
 
@@ -102,12 +102,12 @@ export default function Header({ locale }: { locale: string }) {
             <Link
               key={key}
               href={href}
-              className="text-sm font-medium text-gray-600 transition hover:text-gray-900"
+              className="text-sm font-medium text-muted-foreground transition hover:text-foreground"
             >
               {t(key)}
             </Link>
           ))}
-          <div className="ml-1 flex items-center gap-0.5 border-l border-gray-200 pl-4">
+          <div className="ml-1 flex items-center gap-0.5 border-l border-border pl-4">
             {LOCALES.map(({ code, label }) => (
               <Link
                 key={code}
@@ -115,8 +115,8 @@ export default function Header({ locale }: { locale: string }) {
                 locale={code}
                 className={`rounded px-2 py-1.5 text-sm font-medium transition ${
                   locale === code
-                    ? 'bg-gray-900 text-white'
-                    : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                 }`}
                 aria-label={`Switch to ${label}`}
               >
@@ -130,7 +130,7 @@ export default function Header({ locale }: { locale: string }) {
         <button
           type="button"
           onClick={() => setMobileOpen((o) => !o)}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-gray-600 transition hover:bg-gray-100 hover:text-gray-900 md:hidden"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition hover:bg-muted hover:text-foreground md:hidden"
           aria-expanded={mobileOpen}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
         >

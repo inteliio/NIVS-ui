@@ -9,7 +9,7 @@ export default function ProductGallery({ images }: { images: string[] }) {
 
   return (
     <div className="flex flex-col gap-3 sm:gap-4">
-      <div className="relative aspect-square w-full min-h-0 overflow-hidden rounded-xl bg-gray-100">
+      <div className="relative aspect-square w-full min-h-0 overflow-hidden rounded-xl bg-muted">
         <Image
           src={list[selected]}
           alt="Product"
@@ -28,8 +28,8 @@ export default function ProductGallery({ images }: { images: string[] }) {
               onClick={() => setSelected(i)}
               className={`relative h-14 w-14 shrink-0 overflow-hidden rounded-lg border-2 transition touch-manipulation sm:h-16 sm:w-16 ${
                 i === selected
-                  ? 'border-gray-900'
-                  : 'border-transparent hover:border-gray-300'
+                  ? 'border-primary'
+                  : 'border-transparent hover:border-border'
               }`}
             >
               <Image

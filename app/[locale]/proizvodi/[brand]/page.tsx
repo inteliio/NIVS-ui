@@ -32,16 +32,16 @@ export default async function BrandProductsPage({
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-      <nav className="mb-4 flex flex-wrap items-center gap-x-2 text-sm text-gray-500 sm:mb-6">
-        <Link href="/proizvodi" className="hover:text-gray-900">
+      <nav className="mb-4 flex flex-wrap items-center gap-x-2 text-sm text-muted-foreground sm:mb-6">
+        <Link href="/proizvodi" className="hover:text-foreground">
           {t('title')}
         </Link>
         <span>/</span>
-        <span className="text-gray-900">{brand.name}</span>
+        <span className="text-foreground">{brand.name}</span>
       </nav>
-      <h1 className="mb-6 text-2xl font-bold text-gray-900 sm:mb-8 sm:text-3xl">{brand.name}</h1>
+      <h1 className="mb-6 text-2xl font-bold text-foreground sm:mb-8 sm:text-3xl">{brand.name}</h1>
       {products.length === 0 ? (
-        <p className="text-sm text-gray-500 sm:text-base">No products for this brand yet.</p>
+        <p className="text-sm text-muted-foreground sm:text-base">No products for this brand yet.</p>
       ) : (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {products.map((product) => (

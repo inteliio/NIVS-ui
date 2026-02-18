@@ -20,7 +20,7 @@ export default function HeroSlider({ slides }: { slides: Slide[] }) {
   if (!slides.length) return null;
 
   return (
-    <section className="relative h-[220px] w-full overflow-hidden bg-gray-200 sm:h-[360px] md:h-[420px] lg:h-[500px]">
+    <section className="relative h-[220px] w-full overflow-hidden bg-muted sm:h-[360px] md:h-[420px] lg:h-[500px]">
       {slides.map((slide, i) => (
         <div
           key={slide.src}
@@ -44,7 +44,7 @@ export default function HeroSlider({ slides }: { slides: Slide[] }) {
             key={i}
             onClick={() => setIndex(i)}
             className={`h-2.5 w-2.5 rounded-full transition-colors touch-manipulation sm:h-2 sm:w-2 ${
-              i === index ? 'bg-white' : 'bg-white/50 hover:bg-white/75'
+              i === index ? 'bg-primary' : 'bg-primary/50 hover:bg-primary/75'
             }`}
             aria-label={`Go to slide ${i + 1}`}
           />

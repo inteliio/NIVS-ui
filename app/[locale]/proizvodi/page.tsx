@@ -19,7 +19,7 @@ export default async function ProductsPage({
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-      <h1 className="mb-6 text-2xl font-bold text-gray-900 sm:mb-8 sm:text-3xl">{t('title')}</h1>
+      <h1 className="mb-6 text-2xl font-bold text-foreground sm:mb-8 sm:text-3xl">{t('title')}</h1>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
         {brands.map((brand) => (
           <BrandCard key={brand.id} brand={brand} locale={locale} />

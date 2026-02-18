@@ -14,12 +14,12 @@ export default function FAQAccordion({ items }: { items: Item[] }) {
         return (
           <div
             key={item.id}
-            className="overflow-hidden rounded-lg border border-gray-200 bg-white"
+            className="overflow-hidden rounded-lg border border-border bg-surface"
           >
             <button
               type="button"
               onClick={() => setOpenId(isOpen ? null : item.id)}
-              className="flex min-h-[2.75rem] w-full touch-manipulation items-center justify-between gap-3 px-4 py-3 text-left text-sm font-medium text-gray-900 transition hover:bg-gray-50 sm:text-base"
+              className="flex min-h-[2.75rem] w-full touch-manipulation items-center justify-between gap-3 px-4 py-3 text-left text-sm font-medium text-surface-foreground transition hover:bg-muted sm:text-base"
               aria-expanded={isOpen}
             >
               <span className="min-w-0 flex-1">{item.question}</span>
@@ -31,7 +31,7 @@ export default function FAQAccordion({ items }: { items: Item[] }) {
               </span>
             </button>
             {isOpen && (
-              <div className="border-t border-gray-200 px-4 py-3 text-sm text-gray-600 sm:text-base">
+              <div className="border-t border-border px-4 py-3 text-sm text-muted-foreground sm:text-base">
                 {item.answer}
               </div>
             )}
