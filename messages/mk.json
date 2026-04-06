@@ -50,6 +50,7 @@
     "copyright": "© {year} NIVS Group. Сите права задржани."
   },
   "common": {
-    "loading": "Се вчитува…"
+    "loading": "Се вчитува…",
+    "readMore": "Прочитај повеќе"
   }
 }

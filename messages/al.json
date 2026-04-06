@@ -50,6 +50,7 @@
     "copyright": "© {year} NIVS Group. Të gjitha të drejtat e rezervuara."
   },
   "common": {
-    "loading": "Duke u ngarkuar…"
+    "loading": "Duke u ngarkuar…",
+    "readMore": "Lexo më shumë"
   }
 }

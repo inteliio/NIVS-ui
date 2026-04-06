@@ -50,6 +50,7 @@
     "copyright": "© {year} NIVS Group. All rights reserved."
   },
   "common": {
-    "loading": "Loading…"
+    "loading": "Loading…",
+    "readMore": "Read more"
   }
 }

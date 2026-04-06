@@ -1,38 +1,56 @@
 [
   {
     "id": "t1",
-    "quote": "Reliable partner for years. Quality products and on-time delivery.",
-    "author": "Retail Manager",
-    "company": "Market Plus"
+    "quote": "Соработката со NIVS Group ни обезбеди редовно снабдување и врвен квалитет. Препорачуваме без резерви!",
+    "author": "Sinatra",
+    "company": "Скопје"
   },
   {
     "id": "t2",
-    "quote": "NIVS Group understands our needs. Highly recommended.",
-    "author": "Procurement Director",
-    "company": "Local Stores Chain"
+    "quote": "Сигурна испорака, одличен асортиман и секогаш на повик. Задоволни сме од секој аспект на соработката.",
+    "author": "Učilnica 8mi Mart",
+    "company": "Битола"
   },
   {
     "id": "t3",
-    "quote": "Professional service and a wide range of products.",
-    "author": "Store Owner",
-    "company": "Neighborhood Market"
+    "quote": "NIVS Group е партнер на кој можете да сметате. Mythos стана наше најбарано пиво, а тие секогаш се тука кога ни треба нешто.",
+    "author": "Kasha Bar",
+    "company": "Скопје"
   },
   {
-    "id": "t1",
-    "quote": "Reliable partner for years. Quality products and on-time delivery.",
-    "author": "Retail Manager",
-    "company": "Market Plus"
+    "id": "t4",
+    "quote": "Од кога соработуваме со NIVS Group, снабдувањето е беспрекорно. Одличен тим, одличен однос!",
+    "author": "Drunken Monkey",
+    "company": "Скопје"
   },
   {
-    "id": "t2",
-    "quote": "NIVS Group understands our needs. Highly recommended.",
-    "author": "Procurement Director",
-    "company": "Local Stores Chain"
+    "id": "t5",
+    "quote": "Квалитетни брендови, навремени испораки и секогаш флексибилни кога имаме поголема побарувачка. Точно она што му треба на нашиот бизнис.",
+    "author": "Beergarden",
+    "company": "Скопје"
   },
   {
-    "id": "t3",
-    "quote": "Professional service and a wide range of products.",
-    "author": "Store Owner",
-    "company": "Neighborhood Market"
+    "id": "t6",
+    "quote": "Професионален пристап и сигурна дистрибуција. NIVS Group е наш доверлив партнер веќе подолго време.",
+    "author": "Restoran Pace",
+    "company": "Кочани"
+  },
+  {
+    "id": "t7",
+    "quote": "Со NIVS Group соработуваме веќе одредено време и секогаш сме задоволни. Навремени испораки, квалитетен асортиман — токму она што му треба на еден локал.",
+    "author": "Caffe Bar Central",
+    "company": "Струмица"
+  },
+  {
+    "id": "t8",
+    "quote": "Mythos пивото е апсолутен фаворит кај нашите гости. Со NIVS Group никогаш нема да останеш без залиха.",
+    "author": "Bar Metropolis",
+    "company": "Струмица"
+  },
+  {
+    "id": "t9",
+    "quote": "Широк асортиман, коректни цени и тим кој знае што работи. Препорачуваме на секој угостител.",
+    "author": "Repit Caffè",
+    "company": "Битола"
   }
 ]
