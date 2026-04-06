@@ -74,7 +74,7 @@ export default function Header({ locale }: { locale: string }) {
                   className={`min-h-[2.75rem] flex-1 rounded-lg px-3 py-2.5 text-center text-sm font-medium transition ${
                     locale === code
                       ? 'bg-primary text-primary-foreground'
-                      : 'bg-muted text-surface-foreground hover:bg-border'
+                      : 'bg-muted text-surface-foreground hover:bg-nivs-light-gray'
                   }`}
                 >
                   {label}
@@ -88,9 +88,9 @@ export default function Header({ locale }: { locale: string }) {
   );
 
   return (
-    <header className="sticky top-0 z-[120] border-b border-border bg-white md:z-50 md:bg-surface/95 md:backdrop-blur">
+    <header className="sticky top-0 z-[120] border-b border-header-border bg-header md:z-50">
       <div className="mx-auto flex h-14 min-h-[3.5rem] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0 text-lg font-bold text-foreground sm:text-xl">
+        <Link href="/" className="shrink-0 text-lg font-bold text-white sm:text-xl">
           NIVS Group
         </Link>
 
@@ -103,12 +103,12 @@ export default function Header({ locale }: { locale: string }) {
             <Link
               key={key}
               href={href}
-              className="text-sm font-medium text-muted-foreground transition hover:text-foreground"
+              className="text-sm font-medium text-white"
             >
               {t(key)}
             </Link>
           ))}
-          <div className="ml-1 flex items-center gap-0.5 border-l border-border pl-4">
+          <div className="ml-1 flex items-center gap-0.5 border-l border-header-border pl-4">
             {LOCALES.map(({ code, label }) => (
               <Link
                 key={code}
@@ -117,7 +117,7 @@ export default function Header({ locale }: { locale: string }) {
                 className={`rounded px-2 py-1.5 text-sm font-medium transition ${
                   locale === code
                     ? 'bg-primary text-primary-foreground'
-                    : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                    : 'text-white hover:bg-white/10'
                 }`}
                 aria-label={`Switch to ${label}`}
               >
@@ -131,7 +131,7 @@ export default function Header({ locale }: { locale: string }) {
         <button
           type="button"
           onClick={() => setMobileOpen((o) => !o)}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition hover:bg-muted hover:text-foreground md:hidden"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-white transition hover:bg-white/10 md:hidden"
           aria-expanded={mobileOpen}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
         >

@@ -1,0 +1,11 @@
+[
+  { "partnerName": "Partner 1", "partnerLogoUrl": "/images/partners/1.svg" },
+  { "partnerName": "Partner 2", "partnerLogoUrl": "/images/partners/2.svg" },
+  { "partnerName": "Partner 3", "partnerLogoUrl": "/images/partners/3.svg" },
+  { "partnerName": "Partner 4", "partnerLogoUrl": "/images/partners/4.svg" },
+  { "partnerName": "Partner 5", "partnerLogoUrl": "/images/partners/5.svg" },
+  { "partnerName": "Partner 6", "partnerLogoUrl": "/images/partners/6.svg" },
+  { "partnerName": "Partner 7", "partnerLogoUrl": "/images/partners/7.svg" },
+  { "partnerName": "Partner 8", "partnerLogoUrl": "/images/partners/8.svg" },
+  { "partnerName": "Partner 9", "partnerLogoUrl": "/images/partners/9.svg" }
+]

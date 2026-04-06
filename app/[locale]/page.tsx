@@ -1,9 +1,11 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import HeroSlider from '@/components/HeroSlider';
-import brandsData from '@/data/brands.json';
+import partnersData from '@/data/partners.json';
 import testimonialsData from '@/data/testimonials.json';
+import type { Partner } from '@/types/partners';
 
 const STATS = [
   { key: 'clients' as const, value: '100+' },
@@ -74,18 +76,21 @@ async function StatsSection() {
 
 async function PartnersSection() {
   const t = await getTranslations('home');
-  const partners = brandsData.slice(0, 6).map((b) => ({ logo: b.logo, name: b.name }));
+  const partners = partnersData as Partner[];
   return (
     <section className="py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-xl font-semibold text-foreground sm:text-2xl">{t('partners')}</h2>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-4 sm:mt-8 sm:gap-8">
+        <div className="mt-6 flex flex-nowrap items-center justify-center gap-6 overflow-x-auto py-2 [-ms-overflow-style:none] [scrollbar-width:none] sm:mt-8 sm:gap-10 [&::-webkit-scrollbar]:hidden">
           {partners.map((p) => (
-            <div
-              key={p.name}
-              className="flex h-14 w-24 items-center justify-center rounded-lg bg-muted p-2 sm:h-16 sm:w-32"
-            >
-              <span className="truncate text-xs font-medium text-muted-foreground sm:text-sm">{p.name}</span>
+            <div key={p.partnerName} className="flex shrink-0 items-center justify-center">
+              <Image
+                src={p.partnerLogoUrl}
+                alt={p.partnerName}
+                width={220}
+                height={88}
+                className="h-16 w-auto max-w-[min(220px,28vw)] object-contain sm:h-24 sm:max-w-[260px]"
+              />
             </div>
           ))}
         </div>

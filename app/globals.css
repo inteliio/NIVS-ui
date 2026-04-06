@@ -2,24 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global layout & styling colors (change here to theme the whole app) */
+/*
+ * NIVS Group color palette – source: NIVSGroupPaleta.pdf
+ * Raw tokens (--nivs-*) + semantic aliases (--color-*) for layout and components.
+ */
 :root {
-  /* Page */
-  --color-background: #ffffff;
-  --color-foreground: #111827; /* gray-900 */
-  /* Muted (secondary text, subtle areas) */
-  --color-muted: #f9fafb; /* gray-50 */
-  --color-muted-foreground: #6b7280; /* gray-500 */
-  /* Borders & dividers */
-  --color-border: #ebe7e5; /* gray-200 */
-  /* Cards, header, footer */
+  /* --- Palette (PDF names) --- */
+  --nivs-navy-deep: #0b1f3a; /* Background / Header */
+  --nivs-navy-mid: #1a3558; /* Hover states, secondary */
+  --nivs-navy-light: #2c4f7c; /* Borders, dividers */
+  --nivs-gold: #c5a847; /* CTA buttons, accent */
+  --nivs-gold-hover: #d4b855; /* CTA hover state */
+  --nivs-gold-pale: #f5ecc8; /* Light accent background */
+  --nivs-off-white: #f7f6f2; /* Page background */
+  --nivs-light-gray: #ffffff; /* Cards, dividers */
+  --nivs-text-gray: #5a5a5a; /* Secondary text */
+
+  /* --- Semantic (theme) --- */
+  --color-background: var(--nivs-off-white);
+  --color-foreground: var(--nivs-navy-deep);
+  --color-muted: var(--nivs-light-gray);
+  --color-muted-foreground: var(--nivs-text-gray);
+  --color-border: var(--nivs-light-gray);
   --color-surface: #ffffff;
-  --color-surface-foreground: #111827; /* gray-900 */
-  /* Primary (brand, active nav, buttons) */
-  --color-primary: #111827; /* gray-900 */
-  --color-primary-foreground: #ffffff;
-  /* Modal / menu overlay */
-  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-surface-foreground: var(--nivs-navy-deep);
+  --color-primary: var(--nivs-gold);
+  --color-primary-foreground: var(--nivs-navy-deep);
+  --color-primary-hover: var(--nivs-gold-hover);
+  --color-overlay: rgba(11, 31, 58, 0.55);
+
+  /* Header bar (Navy Deep) */
+  --color-header-bg: var(--nivs-navy-deep);
+  --color-header-fg: #ffffff;
+  --color-header-border: rgba(255, 255, 255, 0.14);
 }
 
 @layer base {
