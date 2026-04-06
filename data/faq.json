@@ -13,5 +13,20 @@
     "id": "faq3",
     "questionKey": "q3",
     "answerKey": "a3"
+  },
+  {
+    "id": "faq4",
+    "questionKey": "q4",
+    "answerKey": "a4"
+  },
+  {
+    "id": "faq5",
+    "questionKey": "q5",
+    "answerKey": "a5"
+  },
+  {
+    "id": "faq6",
+    "questionKey": "q6",
+    "answerKey": "a6"
   }
 ]

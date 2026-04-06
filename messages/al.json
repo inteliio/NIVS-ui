@@ -44,7 +44,13 @@
     "q2": "Cilat janë kushtet e dorëzimit?",
     "a2": "Dorëzojmë në të gjithë vendin. Kushtet varen nga madhësia e porosisë dhe lokacioni. Kontaktoni logjistikën për detaje.",
     "q3": "A punoni me tregtarë të rinj?",
-    "a3": "Po. Mirëpresim partnerë të rinj. Lidhuni me ekipin tonë të shitjeve ose marketingut për të diskutuar opsionet."
+    "a3": "Po. Mirëpresim partnerë të rinj. Lidhuni me ekipin tonë të shitjeve ose marketingut për të diskutuar opsionet.",
+    "q4": "A importoni produktet direkt?",
+    "a4": "Po, NIVS Group bën import të drejtpërdrejtë të produkteve, duke garantuar origjinalitet dhe cilësi të verifikuar.",
+    "q5": "Sa shpejt kryhen dorëzimet?",
+    "a5": "Ofrojmë logjistikë të rregullt dhe profesionale me qasje fleksibile për secilin klient, varësisht nga kërkesat e klientit.",
+    "q6": "A ofroni kushte individuale bashkëpunimi?",
+    "a6": "Për kushte individuale të bashkëpunimit, na kontaktoni në emailin tonë."
   },
   "footer": {
     "copyright": "© {year} NIVS Group. Të gjitha të drejtat e rezervuara."

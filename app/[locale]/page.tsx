@@ -17,8 +17,8 @@ const STATS = [
 ];
 
 const HERO_SLIDES = [
-  { src: "/images/placeholder.svg", alt: "NIVS Group" },
-  { src: "/images/placeholder.svg", alt: "Distribution" },
+  { src: "/images/hero/frutisan.png", alt: "Frutisan orange juice" },
+  { src: "/images/hero/beer.png", alt: "Beer assortment" },
   { src: "/images/placeholder.svg", alt: "Partners" },
 ];
 

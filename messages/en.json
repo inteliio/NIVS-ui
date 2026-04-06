@@ -44,7 +44,13 @@
     "q2": "What are your delivery terms?",
     "a2": "We deliver nationwide. Terms depend on order size and location. Contact logistics for details.",
     "q3": "Do you work with new retailers?",
-    "a3": "Yes. We welcome new partners. Get in touch with our sales or marketing team to discuss options."
+    "a3": "Yes. We welcome new partners. Get in touch with our sales or marketing team to discuss options.",
+    "q4": "Do you import products directly?",
+    "a4": "Yes, NIVS Group imports products directly, ensuring authenticity and verified quality.",
+    "q5": "How quickly are deliveries made?",
+    "a5": "We provide timely and professional logistics with a flexible approach for each client, depending on client requirements.",
+    "q6": "Do you offer individual cooperation terms?",
+    "a6": "For individual cooperation terms, contact us via our email."
   },
   "footer": {
     "copyright": "© {year} NIVS Group. All rights reserved."

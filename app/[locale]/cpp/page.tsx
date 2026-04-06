@@ -20,8 +20,8 @@ export default async function FAQPage({
 
   const items = faqItems.map((item) => ({
     id: item.id,
-    question: t(item.questionKey as 'q1' | 'q2' | 'q3'),
-    answer: t(item.answerKey as 'a1' | 'a2' | 'a3'),
+    question: t(item.questionKey),
+    answer: t(item.answerKey),
   }));
 
   return (
