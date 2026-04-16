@@ -17,9 +17,8 @@ const STATS = [
 ];
 
 const HERO_SLIDES = [
-  { src: "/images/hero/frutisan.png", alt: "Frutisan orange juice" },
-  { src: "/images/hero/beer.png", alt: "Beer assortment" },
-  { src: "/images/placeholder.svg", alt: "Partners" },
+  { src: "/videos/MythosBaner.mp4", alt: "Mythos beer banner", type: "video" as const },
+  { src: "/images/hero/FrutisanBaner.jpg", alt: "Frutisan banner" },
 ];
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
@@ -28,7 +27,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
-      <HeroSlider slides={HERO_SLIDES} />
+      <div className="-mt-14">
+        <HeroSlider slides={HERO_SLIDES} />
+      </div>
       <AboutSection />
       <StatsSection />
       <PartnersSection />

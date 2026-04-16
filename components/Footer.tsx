@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-12">
           <div className="space-y-3">
             <Image
-              src="/logo/nivs_logo.svg"
+              src="/logo/nivsGroupLogovg.svg"
               alt="NIVS Group"
               width={110}
               height={110}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Menu, X } from "lucide-react";
@@ -70,10 +71,17 @@ export default function Header({ locale }: { locale: string }) {
   );
 
   return (
-    <header className="sticky top-0 z-[120] border-b border-header-border bg-header md:z-50">
+    <header className="sticky top-0 z-[120] border-b border-white/20 bg-black/15 backdrop-blur-md md:z-50">
       <div className="mx-auto flex h-14 min-h-[3.5rem] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0 text-lg font-bold text-white sm:text-xl">
-          NIVS Group
+        <Link href="/" className="shrink-0">
+          <Image
+            src="/logo/nivsGroupLogovg.svg"
+            alt="NIVS Group"
+            width={150}
+            height={40}
+            className="h-8 w-auto object-contain sm:h-9"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -85,7 +93,17 @@ export default function Header({ locale }: { locale: string }) {
           ))}
           <div className="ml-1 flex items-center gap-0.5 border-l border-header-border pl-4">
             {LOCALES.map(({ code, label }) => (
-              <Link key={code} href={pathname} locale={code} className={`rounded px-2 py-1.5 text-sm font-medium transition ${locale === code ? "bg-primary text-primary-foreground" : "text-white hover:bg-white/10"}`} aria-label={`Switch to ${label}`}>
+              <Link
+                key={code}
+                href={pathname}
+                locale={code}
+                className={`rounded px-2 py-1.5 text-sm font-medium transition ${
+                  locale === code
+                    ? "text-white underline decoration-white underline-offset-4"
+                    : "text-white hover:bg-white/10"
+                }`}
+                aria-label={`Switch to ${label}`}
+              >
                 {label}
               </Link>
             ))}

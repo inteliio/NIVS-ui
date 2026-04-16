@@ -8,7 +8,7 @@
  */
 :root {
   /* --- Palette (PDF names) --- */
-  --nivs-navy-deep: #0b1f3a; /* Background / Header */
+  --nivs-navy-deep: #2c4f7c; /* Background / Header */
   --nivs-navy-mid: #1a3558; /* Hover states, secondary */
   --nivs-navy-light: #2c4f7c; /* Borders, dividers */
   --nivs-gold: #c5a847; /* CTA buttons, accent */
@@ -70,5 +70,12 @@
 @media (prefers-reduced-motion: reduce) {
   .partners-marquee-track {
     animation: none;
+  }
+}
+
+/* On portrait phones, show more of hero media (less zoom/crop). */
+@media (max-width: 640px) and (orientation: portrait) {
+  .hero-media {
+    object-fit: contain;
   }
 }
