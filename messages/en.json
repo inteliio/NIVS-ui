@@ -22,7 +22,39 @@
   },
   "products": {
     "title": "Our brands",
-    "viewProducts": "View products"
+    "viewProducts": "View products",
+    "noProductsYet": "No products for this brand yet.",
+    "nutritionalValues": "Nutritional values",
+    "tablePer": "Per",
+    "tableValue": "Value",
+    "nutritionPer": {
+      "per100ml": "100 ml"
+    },
+    "nutritionLabels": {
+      "energy": "Energy",
+      "fat": "Fat",
+      "saturatedFat": "Saturated fat",
+      "carbohydrates": "Carbohydrates",
+      "sugars": "Sugars",
+      "protein": "Protein",
+      "salt": "Salt"
+    },
+    "catalog": {
+      "mythos": {
+        "mythos-lager-bottle": {
+          "name": "Mythos Lager (bottle)",
+          "description": "Mythos is the Greek contemporary lager: rich foam, bright blonde colour, balanced body with fruity nuances and hop notes, mild sweetness and a long-lasting aftertaste. 5% ABV lager brewed in Greece. Typical green bottle with easy-open cap. Nutritional values according to Olympic Brewery / Mythos declaration, per 100 ml serving."
+        },
+        "mythos-lager-can": {
+          "name": "Mythos Lager (can)",
+          "description": "The same Mythos Hellenic lager in a can—refreshing, easy-drinking 5% ABV lager from Greece. Nutritional values match bottled Mythos Lager per the manufacturer table (per 100 ml)."
+        },
+        "mythos-ice": {
+          "name": "Mythos Ice",
+          "description": "Mythos Ice is a filtered Greek lager chilled during production for an extra-refreshing profile, with light bitterness and a crisp character. 4.4% ABV. Typical ingredients: water, barley malt, barley, maize grits, hops, yeast. Nutritional values according to Olympic Brewery / Mythos declaration, per 100 ml serving."
+        }
+      }
+    }
   },
   "about": {
     "title": "About Us",

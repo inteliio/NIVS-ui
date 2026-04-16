@@ -22,7 +22,39 @@
   },
   "products": {
     "title": "Brendet tona",
-    "viewProducts": "Shiko produktet"
+    "viewProducts": "Shiko produktet",
+    "noProductsYet": "Ende nuk ka produkte për këtë brend.",
+    "nutritionalValues": "Vlerat ushqyese",
+    "tablePer": "Për",
+    "tableValue": "Vlera",
+    "nutritionPer": {
+      "per100ml": "100 ml"
+    },
+    "nutritionLabels": {
+      "energy": "Energjia",
+      "fat": "Yndyrat",
+      "saturatedFat": "Nga të cilat të ngopura",
+      "carbohydrates": "Karbohidratet",
+      "sugars": "Nga të cilat sheqerna",
+      "protein": "Proteinat",
+      "salt": "Kripa"
+    },
+    "catalog": {
+      "mythos": {
+        "mythos-lager-bottle": {
+          "name": "Mythos Lager (shishe)",
+          "description": "Mythos është lager-i bashkëkohor grek: shkumë e pasur, ngjyrë e çelët bjonde, trup i balancuar me nuanca frutore dhe nota hopi, ëmbëlsi e butë dhe pas shije i qëndrueshëm. Lager 5% vol. i prodhuar në Greqi. Shishe e gjelbër tipike me kapak të lehtë për hapje. Vlerat ushqyese sipas deklaratës së Olympic Brewery / Mythos, për 100 ml."
+        },
+        "mythos-lager-can": {
+          "name": "Mythos Lager (kanaçe)",
+          "description": "E njëjta recetë e lager-it helen Mythos në kanaçe—lager freskues dhe i lehtë për pirje 5% vol. nga Greqia. Vlerat ushqyese përputhen me Mythos Lager në shishe sipas tabelës së prodhuesit (për 100 ml)."
+        },
+        "mythos-ice": {
+          "name": "Mythos Ice",
+          "description": "Mythos Ice është një lager grek i filtruar, i ftohur gjatë prodhimit për një profil më freskues, me hidhësi të lehtë dhe karakter të mprehtë. 4.4% vol. Përbërës tipikë: ujë, malt elbi, elb, kokrra misri, hop, maja. Vlerat ushqyese sipas deklaratës së Olympic Brewery / Mythos, për 100 ml."
+        }
+      }
+    }
   },
   "about": {
     "title": "Rreth nesh",

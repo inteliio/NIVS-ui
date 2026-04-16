@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-export default function ProductGallery({ images }: { images: string[] }) {
+export default function ProductGallery({ images, primaryAlt }: { images: string[]; primaryAlt: string }) {
   const [selected, setSelected] = useState(0);
   const list = images.length ? images : ['/images/placeholder.svg'];
 
@@ -12,7 +12,7 @@ export default function ProductGallery({ images }: { images: string[] }) {
       <div className="relative aspect-square w-full min-h-0 overflow-hidden rounded-xl bg-muted">
         <Image
           src={list[selected]}
-          alt="Product"
+          alt={primaryAlt}
           fill
           className="object-contain"
           sizes="(max-width: 768px) 100vw, 50vw"

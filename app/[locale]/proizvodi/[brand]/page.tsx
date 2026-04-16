@@ -7,7 +7,7 @@ import brandsData from '@/data/brands.json';
 import productsData from '@/data/products.json';
 
 const brands = brandsData as { id: string; name: string; slug: string }[];
-const productsByBrand = productsData as Record<string, { id: string; name: string; slug: string; description?: string; images: string[] }[]>;
+const productsByBrand = productsData as Record<string, { id: string; slug: string; images: string[] }[]>;
 
 export function generateStaticParams() {
   const locales = ['en', 'al', 'mk'] as const;
@@ -41,7 +41,7 @@ export default async function BrandProductsPage({
       </nav>
       <h1 className="mb-6 text-2xl font-bold text-foreground sm:mb-8 sm:text-3xl">{brand.name}</h1>
       {products.length === 0 ? (
-        <p className="text-sm text-muted-foreground sm:text-base">No products for this brand yet.</p>
+        <p className="text-sm text-muted-foreground sm:text-base">{t('noProductsYet')}</p>
       ) : (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {products.map((product) => (
@@ -49,6 +49,8 @@ export default async function BrandProductsPage({
               key={product.id}
               product={product}
               brandSlug={brandSlug}
+              title={t(`catalog.${brandSlug}.${product.slug}.name`)}
+              summary={t(`catalog.${brandSlug}.${product.slug}.description`)}
             />
           ))}
         </div>

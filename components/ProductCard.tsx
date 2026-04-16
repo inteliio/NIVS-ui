@@ -3,18 +3,20 @@ import { Link } from '@/i18n/navigation';
 
 type Product = {
   id: string;
-  name: string;
   slug: string;
-  description?: string;
   images: string[];
 };
 
 export default function ProductCard({
   product,
   brandSlug,
+  title,
+  summary,
 }: {
   product: Product;
   brandSlug: string;
+  title: string;
+  summary?: string;
 }) {
   const image = product.images?.[0] ?? '/images/placeholder.svg';
 
@@ -26,17 +28,17 @@ export default function ProductCard({
       <div className="relative aspect-square w-full bg-muted">
         <Image
           src={image}
-          alt={product.name}
+          alt={title}
           fill
           className="object-cover transition group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
       </div>
       <div className="flex flex-1 flex-col p-3 sm:p-4">
-        <h3 className="font-medium text-surface-foreground line-clamp-2 text-sm sm:text-base">{product.name}</h3>
-        {product.description && (
+        <h3 className="font-medium text-surface-foreground line-clamp-2 text-sm sm:text-base">{title}</h3>
+        {summary && (
           <p className="mt-1 line-clamp-2 text-xs text-muted-foreground sm:text-sm">
-            {product.description}
+            {summary}
           </p>
         )}
       </div>
