@@ -42,16 +42,74 @@
     "catalog": {
       "mythos": {
         "mythos-lager-bottle": {
-          "name": "Mythos Lager (bottle)",
+          "name": "Mythos Lager (glass) — 330 ml",
           "description": "Mythos is the Greek contemporary lager: rich foam, bright blonde colour, balanced body with fruity nuances and hop notes, mild sweetness and a long-lasting aftertaste. 5% ABV lager brewed in Greece. Typical green bottle with easy-open cap. Nutritional values according to Olympic Brewery / Mythos declaration, per 100 ml serving."
         },
         "mythos-lager-can": {
-          "name": "Mythos Lager (can)",
+          "name": "Mythos Lager (can) — 500 ml",
           "description": "The same Mythos Hellenic lager in a can—refreshing, easy-drinking 5% ABV lager from Greece. Nutritional values match bottled Mythos Lager per the manufacturer table (per 100 ml)."
         },
         "mythos-ice": {
-          "name": "Mythos Ice",
+          "name": "Mythos Ice — 330 ml",
           "description": "Mythos Ice is a filtered Greek lager chilled during production for an extra-refreshing profile, with light bitterness and a crisp character. 4.4% ABV. Typical ingredients: water, barley malt, barley, maize grits, hops, yeast. Nutritional values according to Olympic Brewery / Mythos declaration, per 100 ml serving."
+        }
+      },
+      "frutisan": {
+        "frutisan-orange-big": {
+          "name": "Frutisan 100% Orange — 700 ml",
+          "description": "100% fruit juice with orange taste: no added sugar in the sense of EU regulation for fruit juices, rich in vitamin C and a refreshing choice for any time of day. Large pack for sharing or the fridge. Nutritional values per 100 ml are typical for this 100% juice line—always check your bottle for the exact declaration on the label."
+        },
+        "frutisan-orange-small": {
+          "name": "Frutisan 100% Orange — 300 ml",
+          "description": "Same Frutisan 100% orange juice in a handy smaller bottle—easy to carry and ideal for on the go. No added sugar (fruit juices, EU rules), natural fruit taste. Nutritional values per 100 ml are typical for this line; refer to packaging for precise figures."
+        },
+        "frutisan-peach-big": {
+          "name": "Frutisan 100% Peach — 700 ml",
+          "description": "Delicate peach character balanced with apple juice in a 100% fruit blend—no added sugar (as for fruit juices under EU rules), no artificial colours or sweeteners. Large format. Typical nutrition per 100 ml for this product category; confirm on pack."
+        },
+        "frutisan-peach-small": {
+          "name": "Frutisan 100% Peach — 300 ml",
+          "description": "Frutisan 100% peach blend in a smaller bottle—refreshing, fruit-forward, suited for daily enjoyment. Typical nutrition per 100 ml for this line; see label for the exact table."
+        },
+        "frutisan-cherry-big": {
+          "name": "Frutisan 100% Cherry — 700 ml",
+          "description": "100% fruit juice with cherry taste—bold, fruity refreshment without added sugar in line with fruit-juice regulations. Large format. Typical nutrition per 100 ml; packaging remains the source of truth."
+        },
+        "frutisan-pineapple-big": {
+          "name": "Frutisan 100% Pineapple — 700 ml",
+          "description": "Tropical pineapple in a 100% fruit juice—naturally sweet from fruit, no added sugar (EU fruit juice rules), ideal chilled. Large pack. Typical values per 100 ml; check your bottle’s nutrition table."
+        },
+        "frutisan-pineapple-small": {
+          "name": "Frutisan 100% Pineapple — 300 ml",
+          "description": "Pineapple 100% juice in a smaller bottle for portability. Same quality promise: fruit juice without added sugar as defined for juices. Typical nutrition per 100 ml; label prevails."
+        },
+        "frutisan-apple-big": {
+          "name": "Frutisan 100% Apple — 700 ml",
+          "description": "Classic apple 100% juice—thirst-quenching, no added sugar (fruit juice category), no artificial additives in the Frutisan 100% line positioning. Large format. Typical nutrition per 100 ml; verify on pack."
+        },
+        "frutisan-apple-small": {
+          "name": "Frutisan 100% Apple — 300 ml",
+          "description": "Apple 100% juice in a smaller bottle—easy refreshment with natural fruit sugars only. Typical nutrition per 100 ml for this range; use the label for exact values."
+        },
+        "frutisan-orange-glass-200": {
+          "name": "Frutisan 100% Orange — 200 ml (glass)",
+          "description": "100% fruit juice with orange taste in a 200 ml glass bottle. Product photo not available yet. Typical nutrition per 100 ml for this line; see packaging for the exact declaration."
+        },
+        "frutisan-peach-glass-200": {
+          "name": "Frutisan 100% Peach — 200 ml (glass)",
+          "description": "Frutisan 100% peach blend in a 200 ml glass bottle. Product photo not available yet. Typical nutrition per 100 ml; packaging is authoritative."
+        },
+        "frutisan-cherry-glass-200": {
+          "name": "Frutisan 100% Cherry — 200 ml (glass)",
+          "description": "100% fruit juice with cherry taste in a 200 ml glass bottle. Product photo not available yet. Typical nutrition per 100 ml; refer to the label."
+        },
+        "frutisan-pineapple-glass-200": {
+          "name": "Frutisan 100% Pineapple — 200 ml (glass)",
+          "description": "Pineapple 100% juice in a 200 ml glass bottle. Product photo not available yet. Typical nutrition per 100 ml; check your bottle."
+        },
+        "frutisan-apple-glass-200": {
+          "name": "Frutisan 100% Apple — 200 ml (glass)",
+          "description": "Apple 100% juice in a 200 ml glass bottle. Product photo not available yet. Typical nutrition per 100 ml; use the label for exact values."
         }
       }
     }

@@ -42,16 +42,74 @@
     "catalog": {
       "mythos": {
         "mythos-lager-bottle": {
-          "name": "Mythos Lager (shishe)",
+          "name": "Mythos Lager (qelq klasik) — 330 ml",
           "description": "Mythos është lager-i bashkëkohor grek: shkumë e pasur, ngjyrë e çelët bjonde, trup i balancuar me nuanca frutore dhe nota hopi, ëmbëlsi e butë dhe pas shije i qëndrueshëm. Lager 5% vol. i prodhuar në Greqi. Shishe e gjelbër tipike me kapak të lehtë për hapje. Vlerat ushqyese sipas deklaratës së Olympic Brewery / Mythos, për 100 ml."
         },
         "mythos-lager-can": {
-          "name": "Mythos Lager (kanaçe)",
+          "name": "Mythos Lager (kanaçe) — 500 ml",
           "description": "E njëjta recetë e lager-it helen Mythos në kanaçe—lager freskues dhe i lehtë për pirje 5% vol. nga Greqia. Vlerat ushqyese përputhen me Mythos Lager në shishe sipas tabelës së prodhuesit (për 100 ml)."
         },
         "mythos-ice": {
-          "name": "Mythos Ice",
+          "name": "Mythos Ice — 330 ml",
           "description": "Mythos Ice është një lager grek i filtruar, i ftohur gjatë prodhimit për një profil më freskues, me hidhësi të lehtë dhe karakter të mprehtë. 4.4% vol. Përbërës tipikë: ujë, malt elbi, elb, kokrra misri, hop, maja. Vlerat ushqyese sipas deklaratës së Olympic Brewery / Mythos, për 100 ml."
+        }
+      },
+      "frutisan": {
+        "frutisan-orange-big": {
+          "name": "Frutisan 100% portokall — 700 ml",
+          "description": "Lëng 100% fruti me shije portokalli: pa sheqer të shtuar në kuptimin e rregulloreve të BE-së për lëngje frutash, i pasur me vitaminë C dhe zgjedhje freskuese gjatë ditës. Paketim i madh për familjen ose frigoriferin. Vlerat për 100 ml janë tipike për këtë linjë 100%—gjithmonë kontrolloni deklaratën në etiketë."
+        },
+        "frutisan-orange-small": {
+          "name": "Frutisan 100% portokall — 300 ml",
+          "description": "I njëjti lëng Frutisan 100% portokall në shishe më të vogël—praktik për rrugë. Pa sheqer të shtuar (lëngje frutash, rregullat e BE-së), shije natyrale fruti. Vlerat për 100 ml janë tipike; për shifra të sakta shihni paketimin."
+        },
+        "frutisan-peach-big": {
+          "name": "Frutisan 100% pjeshkë — 700 ml",
+          "description": "Karakter i delikatë i pjeshkës në ekuilibër me lëng molle në përzierje 100% fruti—pa sheqer të shtuar (sipas rregullave të BE-së për lëngje), pa ngjyra ose ëmbëlsues artificialë. Format i madh. Vlera tipike për 100 ml; konfirmoni në paketim."
+        },
+        "frutisan-peach-small": {
+          "name": "Frutisan 100% pjeshkë — 300 ml",
+          "description": "Përzierja Frutisan 100% pjeshkë në shishe kompakte—freskuese dhe frutore, e përshtatshme për përditshmëri. Vlera tipike për 100 ml; tabela e saktë është në etiketë."
+        },
+        "frutisan-cherry-big": {
+          "name": "Frutisan 100% qershi — 700 ml",
+          "description": "Lëng 100% fruti me shije qershie—freskim i theksuar frutor pa sheqer të shtuar në përputhje me kategorinë e lëngjeve të frutit. Format i madh. Vlera tipike për 100 ml; paketimi mbetet burimi zyrtar."
+        },
+        "frutisan-pineapple-big": {
+          "name": "Frutisan 100% ananas — 700 ml",
+          "description": "Ananas tropikal në lëng 100% fruti—natyrisht i ëmbël nga fruti, pa sheqer të shtuar (rregullat e BE-së për lëngje), ideal i ftohtë. Paketim i madh. Vlera tipike për 100 ml; kontrolloni tabelën ushqyese në shishe."
+        },
+        "frutisan-pineapple-small": {
+          "name": "Frutisan 100% ananas — 300 ml",
+          "description": "Lëng ananasi 100% në shishe më të vogël për bartje. E njëjta premisë cilësie: lëng fruti pa sheqer të shtuar siç përcaktohet për lëngjet. Vlera tipike për 100 ml; mbizotëron etiketa."
+        },
+        "frutisan-apple-big": {
+          "name": "Frutisan 100% mollë — 700 ml",
+          "description": "Lëng klasik molle 100%—shues etjeje, pa sheqer të shtuar (kategoria lëng fruti), pa shtesa artificiale sipas pozicionimit të linjës Frutisan 100%. Format i madh. Vlera tipike për 100 ml; verifikoni në paketim."
+        },
+        "frutisan-apple-small": {
+          "name": "Frutisan 100% mollë — 300 ml",
+          "description": "Lëng molle 100% në shishe më të vogël—freskim i lehtë me sheqerna natyrale të frutit. Vlera tipike për 100 ml për këtë gamë; për vlera të sakta përdorni etiketën."
+        },
+        "frutisan-orange-glass-200": {
+          "name": "Frutisan 100% portokall — 200 ml (qelq)",
+          "description": "Lëng 100% fruti me shije portokalli në shishe qelqi 200 ml. Foto e produktit ende nuk është e disponueshme. Vlera tipike për 100 ml; përdorni paketimin si burim zyrtar."
+        },
+        "frutisan-peach-glass-200": {
+          "name": "Frutisan 100% pjeshkë — 200 ml (qelq)",
+          "description": "Përzierja Frutisan 100% pjeshkë në shishe qelqi 200 ml. Foto e produktit ende nuk është e disponueshme. Vlera tipike për 100 ml; etiketa mbizotëron."
+        },
+        "frutisan-cherry-glass-200": {
+          "name": "Frutisan 100% qershi — 200 ml (qelq)",
+          "description": "Lëng 100% fruti me shije qershie në shishe qelqi 200 ml. Foto e produktit ende nuk është e disponueshme. Vlera tipike për 100 ml; referojuni etiketës."
+        },
+        "frutisan-pineapple-glass-200": {
+          "name": "Frutisan 100% ananas — 200 ml (qelq)",
+          "description": "Lëng ananasi 100% në shishe qelqi 200 ml. Foto e produktit ende nuk është e disponueshme. Vlera tipike për 100 ml; kontrolloni shishen."
+        },
+        "frutisan-apple-glass-200": {
+          "name": "Frutisan 100% mollë — 200 ml (qelq)",
+          "description": "Lëng molle 100% në shishe qelqi 200 ml. Foto e produktit ende nuk është e disponueshme. Vlera tipike për 100 ml; për vlera të sakta përdorni etiketën."
         }
       }
     }

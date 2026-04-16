@@ -43,5 +43,202 @@
       ]
     }
   ],
-  "frutisan": []
+  "frutisan": [
+    {
+      "id": "frutisan-orange-big",
+      "slug": "frutisan-orange-big",
+      "images": ["/images/products/frutisan/OrangeBig.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "182 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0.06 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0.02 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.43 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-orange-small",
+      "slug": "frutisan-orange-small",
+      "images": ["/images/products/frutisan/OrangeSmall.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "182 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0.06 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0.02 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.43 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-peach-big",
+      "slug": "frutisan-peach-big",
+      "images": ["/images/products/frutisan/PeachBig.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "170 kJ / 41 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "3.5 mg", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "2.0 mg", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.3 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "8.6 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.40 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "3.9 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-peach-small",
+      "slug": "frutisan-peach-small",
+      "images": ["/images/products/frutisan/PeachSmall.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "170 kJ / 41 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "3.5 mg", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "2.0 mg", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.3 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "8.6 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.40 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "3.9 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-cherry-big",
+      "slug": "frutisan-cherry-big",
+      "images": ["/images/products/frutisan/CherryBig.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "182 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0.06 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0.02 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.43 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-pineapple-big",
+      "slug": "frutisan-pineapple-big",
+      "images": ["/images/products/frutisan/PineappleBig.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "182 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0.06 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0.02 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.43 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-pineapple-small",
+      "slug": "frutisan-pineapple-small",
+      "images": ["/images/products/frutisan/PineappleSmall.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "182 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0.06 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0.02 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.43 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-apple-big",
+      "slug": "frutisan-apple-big",
+      "images": ["/images/products/frutisan/AppleBig.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "178 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "3.3 mg", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "1.7 mg", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "10.2 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "10.1 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.35 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "7.8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-apple-small",
+      "slug": "frutisan-apple-small",
+      "images": ["/images/products/frutisan/AppleSmall.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "178 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "3.3 mg", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "1.7 mg", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "10.2 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "10.1 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.35 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "7.8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-orange-glass-200",
+      "slug": "frutisan-orange-glass-200",
+      "images": [],
+      "nutrition": [
+        { "labelKey": "energy", "value": "182 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0.06 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0.02 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.43 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-peach-glass-200",
+      "slug": "frutisan-peach-glass-200",
+      "images": [],
+      "nutrition": [
+        { "labelKey": "energy", "value": "170 kJ / 41 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "3.5 mg", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "2.0 mg", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.3 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "8.6 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.40 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "3.9 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-cherry-glass-200",
+      "slug": "frutisan-cherry-glass-200",
+      "images": [],
+      "nutrition": [
+        { "labelKey": "energy", "value": "182 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0.06 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0.02 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.43 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-pineapple-glass-200",
+      "slug": "frutisan-pineapple-glass-200",
+      "images": [],
+      "nutrition": [
+        { "labelKey": "energy", "value": "182 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0.06 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0.02 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "9.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.43 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "8 mg", "perKey": "per100ml" }
+      ]
+    },
+    {
+      "id": "frutisan-apple-glass-200",
+      "slug": "frutisan-apple-glass-200",
+      "images": [],
+      "nutrition": [
+        { "labelKey": "energy", "value": "178 kJ / 43 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "3.3 mg", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "1.7 mg", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "10.2 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "10.1 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "0.35 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "7.8 mg", "perKey": "per100ml" }
+      ]
+    }
+  ]
 }
