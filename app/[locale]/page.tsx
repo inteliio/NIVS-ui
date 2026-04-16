@@ -10,9 +10,14 @@ import partnersData from "@/data/partners.json";
 import testimonialsData from "@/data/testimonials.json";
 import type { Partner } from "@/types/partners";
 
+type TestimonialEntry = { id: string; quote: string; author: string; company: string };
+type TestimonialsByLocale = Record<"en" | "mk" | "al", TestimonialEntry[]>;
+
+const TESTIMONIALS_BY_LOCALE = testimonialsData as TestimonialsByLocale;
+
 const STATS = [
-  { key: "clients" as const, value: "100+" },
-  { key: "products" as const, value: "500+" },
+  { key: "clients" as const, value: "800+" },
+  { key: "products" as const, value: "20+" },
   { key: "years" as const, value: "15+" },
 ];
 
@@ -20,8 +25,6 @@ const HERO_SLIDES = [
   { src: "/videos/MythosBaner.mp4", alt: "Mythos beer banner", type: "video" as const },
   { src: "/images/hero/FrutisanBaner.jpg", alt: "Frutisan banner" },
 ];
-
-const SECTION_DIVIDER_LINE_CLASS = "mx-auto mb-6 h-[2px] w-[100%] bg-gradient-to-r from-transparent via-[#2C4F7C]/70 to-transparent sm:mb-8";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -35,7 +38,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <StatsSection />
       <AboutSection />
       <PartnersSection />
-      <TestimonialsSection />
+      <TestimonialsSection locale={locale} />
     </>
   );
 }
@@ -66,7 +69,15 @@ async function StatsSection() {
   return (
     <section className="border-y border-border bg-muted py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* <div className={SECTION_DIVIDER_LINE_CLASS} /> */}
+        <div className="mb-8 flex justify-center sm:mb-10" aria-hidden>
+          <Image
+            src="/images/north-macedonia-outline.svg"
+            alt=""
+            width={1401}
+            height={1130}
+            className="h-32 w-auto max-w-[min(95vw,40rem)] object-contain sm:h-40 md:h-48 lg:h-52"
+          />
+        </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-8">
           {STATS.map(({ key, value }) => (
             <div key={key} className="flex items-center justify-center gap-2 text-left sm:gap-4">
@@ -91,30 +102,29 @@ async function StatsSection() {
 async function PartnersSection() {
   const t = await getTranslations("home");
   const partners = partnersData as Partner[];
-  const marqueePartners = [...partners, ...partners];
+  const marqueePartners = [...partners, ...partners, ...partners];
   return (
     <section className="border-y border-border bg-surface py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className={SECTION_DIVIDER_LINE_CLASS} />
         <h2 className="text-center text-xl font-semibold text-foreground sm:text-2xl">{t("partners")}</h2>
         <div className="partners-fade-mask mt-6 overflow-hidden py-2 sm:mt-8">
           <div className="partners-marquee-track">
             {marqueePartners.map((p, idx) => (
-              <div key={`${p.partnerName}-${idx}`} className="mx-6 flex shrink-0 items-center justify-center sm:mx-10">
+              <div key={`${p.partnerName}-${idx}`} className="mx-4 flex shrink-0 items-center justify-center sm:mx-10">
                 <Image src={p.partnerLogoUrl} alt={p.partnerName} width={220} height={88} className="h-16 w-auto max-w-[min(220px,40vw)] object-contain opacity-90 sm:h-24 sm:max-w-[260px]" />
               </div>
             ))}
           </div>
         </div>
-        {/* <div className={SECTION_DIVIDER_LINE_CLASS} /> */}
       </div>
     </section>
   );
 }
 
-async function TestimonialsSection() {
+async function TestimonialsSection({ locale }: { locale: string }) {
   const t = await getTranslations("home");
   const tCommon = await getTranslations("common");
-  const testimonials = testimonialsData as { id: string; quote: string; author: string; company: string }[];
+  const key = locale === "en" || locale === "mk" || locale === "al" ? locale : "mk";
+  const testimonials = TESTIMONIALS_BY_LOCALE[key];
   return <TestimonialsGrid title={t("testimonials")} loadMoreLabel={tCommon("readMore")} testimonials={testimonials} />;
 }

@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import FAQAccordion from '@/components/FAQAccordion';
+import PageTitleAccent from '@/components/PageTitleAccent';
 import faqData from '@/data/faq.json';
 
 const faqItems = faqData as { id: string; questionKey: string; answerKey: string }[];
@@ -26,7 +27,10 @@ export default async function FAQPage({
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-      <h1 className="mb-6 text-2xl font-bold text-foreground sm:mb-8 sm:text-3xl">{t('title')}</h1>
+      <header className="mb-6 sm:mb-8">
+        <PageTitleAccent />
+        <h1 className="mt-4 text-2xl font-bold text-foreground sm:text-3xl">{t('title')}</h1>
+      </header>
       <FAQAccordion items={items} />
     </div>
   );

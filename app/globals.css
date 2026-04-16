@@ -14,8 +14,8 @@
   --nivs-gold: #c5a847; /* CTA buttons, accent */
   --nivs-gold-hover: #d4b855; /* CTA hover state */
   --nivs-gold-pale: #f5ecc8; /* Light accent background */
-  --nivs-off-white: #f7f6f2; /* Page background */
-  --nivs-light-gray: #ffffff; /* Cards, dividers */
+  --nivs-off-white2: #f7f6f2; /* Page background */
+  --nivs-off-white: #ffffff; /* Cards, dividers */
   --nivs-text-gray: #5a5a5a; /* Secondary text */
 
   /* --- Semantic (theme) --- */
@@ -46,18 +46,26 @@
   }
 }
 
+/* Three identical segments in the track → move by exactly one segment */
 @keyframes partners-marquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-33.3333333333%);
   }
 }
 
+/* Edge fade only from sm up — on mobile full-width scroll with no transparent “blank” sides */
 .partners-fade-mask {
-  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .partners-fade-mask {
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
 }
 
 .partners-marquee-track {
@@ -73,9 +81,29 @@
   }
 }
 
-/* On portrait phones, show more of hero media (less zoom/crop). */
-@media (max-width: 640px) and (orientation: portrait) {
-  .hero-media {
-    object-fit: contain;
+@keyframes mobile-nav-item-in {
+  from {
+    opacity: 0;
+    transform: translateX(0.75rem);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-nav-item {
+  animation: mobile-nav-item-in 0.42s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-nav-item {
+    animation: none;
+  }
+}
+
+/* Slight zoom on hero slides (clip via parent overflow-hidden). */
+.hero-media {
+  transform: scale(1.08);
+  transform-origin: center center;
 }

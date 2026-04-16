@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import ProductCard from '@/components/ProductCard';
+import PageTitleAccent from '@/components/PageTitleAccent';
 import brandsData from '@/data/brands.json';
 import productsData from '@/data/products.json';
 
@@ -39,7 +40,10 @@ export default async function BrandProductsPage({
         <span>/</span>
         <span className="text-foreground">{brand.name}</span>
       </nav>
-      <h1 className="mb-6 text-2xl font-bold text-foreground sm:mb-8 sm:text-3xl">{brand.name}</h1>
+      <header className="mb-6 sm:mb-8">
+        <PageTitleAccent />
+        <h1 className="mt-4 text-2xl font-bold text-foreground sm:text-3xl">{brand.name}</h1>
+      </header>
       {products.length === 0 ? (
         <p className="text-sm text-muted-foreground sm:text-base">{t('noProductsYet')}</p>
       ) : (

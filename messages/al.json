@@ -4,7 +4,11 @@
     "products": "Produktet",
     "about": "Rreth nesh",
     "contact": "Kontakt",
-    "faq": "Pyetje"
+    "faq": "Pyetje",
+    "openMenu": "Hape menunë",
+    "closeMenu": "Mbyll menunë",
+    "language": "Gjuha",
+    "mainNavigation": "Navigacioni kryesor"
   },
   "home": {
     "title": "NIVS Group",
@@ -12,6 +16,8 @@
     "aboutTitle": "Rreth nesh",
     "aboutShort": "NIVS Group është e specializuar në import dhe shpërndarje, duke u shërbyer tregjeve dhe dyqaneve lokale me një gamë të gjerë produktesh. Jemi të përkushtuar ndaj cilësisë dhe partneriteteve të besueshme.",
     "aboutLink": "Mëso më shumë",
+    "heroSeeMore": "Shiko më shumë",
+    "heroSlideGoTo": "Shko te slide-i {n}",
     "stats": {
       "clients": "Klientë",
       "products": "Produkte",
@@ -22,8 +28,10 @@
   },
   "products": {
     "title": "Brendet tona",
+    "downloadCatalogue": "Shkarko katalogun",
     "viewProducts": "Shiko produktet",
     "noProductsYet": "Ende nuk ka produkte për këtë brend.",
+    "requestQuote": "Kërko ofertë",
     "nutritionalValues": "Vlerat ushqyese",
     "tablePer": "Për",
     "tableValue": "Vlera",
@@ -128,34 +136,49 @@
   },
   "about": {
     "title": "Rreth nesh",
-    "content": "NIVS Group është një kompani e specializuar në import dhe shpërndarje, duke u shërbyer tregjeve dhe dyqaneve lokale me një gamë të gjerë produktesh. Me vite përvojë në industri, jemi të përkushtuar ndaj cilësisë dhe partneriteteve të besueshme."
+    "lead": "Ne lidhim brendet kryesore të pijeve me tregjet dhe sektorin HORECA në të gjithë Maqedoninë e Veriut.",
+    "content": "NIVS Group u themelua në 2023 me një vizion të qartë — të lidhë brendet botërore kryesore me tregun maqedonas.\nPunojmë me përkushtim, përgjegjësi dhe profesionalizëm ndaj çdo partneri dhe klienti.\nSi përfaqësues i autorizuar dhe shpërndarës i brendeve të njohura vendase dhe ndërkombëtare në birrë dhe pije joalkoolike, sigurojmë furnizim të pandërprerë dhe disponueshmëri të vazhdueshme të produkteve në të gjithë Maqedoninë e Veriut.\nPuna jonë mbështetet në:\n● Import të drejtpërdrejtë dhe cilësi të verifikuar\n● Logjistikë të rregullt dhe profesionale\n● Kushte konkurruese dhe dorëzime të sigurta\n● Qasje individuale për çdo klient\nBashkëpunojmë me markete, kompani me shitje me shumicë dhe sektorin HORECA — duke ofruar qëndrueshmëri dhe mbështetje në çdo hap.\nBesojmë se suksesi i vërtetë ndërtohet ngadalë — përmes besimit, cilësisë dhe marrëdhënieve që zgjasin.",
+    "ctaPrompt": "Dëshironi të bashkëpunojmë?",
+    "cta": "Na kontaktoni"
   },
   "contact": {
-    "title": "Kontakt",
-    "department": "Departamenti",
-    "email": "Email",
-    "phone": "Telefon",
-    "marketing": "Marketing",
-    "sales": "Shitjet",
-    "logistics": "Logjistika"
+    "title": "Na kontaktoni",
+    "companyLine": "NIVS GROUP",
+    "companyCity": "Shkup",
+    "addressRegistered": "Adresa",
+    "addressRegisteredLine": "Rruga Volgogradska nr. 3/26, Karposh",
+    "addressOffice": "Adresa e zyrës",
+    "addressOfficeLine": "Bulevardi Partizanski Odredi nr. 18",
+    "mapEmbedRegistered": "Harta e adresës së regjistruar",
+    "mapEmbedOffice": "Harta e adresës së zyrës",
+    "openInGoogleMaps": "Hape në Google Maps",
+    "contactsHeading": "Kontaktet",
+    "phoneLabelFinance": "Financa",
+    "phoneLabelCommerce": "Tregti dhe shpërndarje",
+    "phoneLabelOffers": "Oferta dhe informacione",
+    "phoneDisplayFinance": "070 306 106",
+    "phoneDisplayCommerce": "070 228 220",
+    "phoneDisplayOffers": "070 228 218"
   },
   "faq": {
     "title": "Pyetje të bëra shpesh",
-    "q1": "Si mund të bëj një porosi?",
-    "a1": "Kontaktoni departamentin tonë të shitjeve me email ose telefon. Do t'ju udhëzojmë në proces.",
-    "q2": "Cilat janë kushtet e dorëzimit?",
-    "a2": "Dorëzojmë në të gjithë vendin. Kushtet varen nga madhësia e porosisë dhe lokacioni. Kontaktoni logjistikën për detaje.",
-    "q3": "A punoni me tregtarë të rinj?",
-    "a3": "Po. Mirëpresim partnerë të rinj. Lidhuni me ekipin tonë të shitjeve ose marketingut për të diskutuar opsionet.",
-    "q4": "A importoni produktet direkt?",
-    "a4": "Po, NIVS Group bën import të drejtpërdrejtë të produkteve, duke garantuar origjinalitet dhe cilësi të verifikuar.",
+    "q1": "Cilat produkte shpërndan NIVS Group?",
+    "a1": "NIVS Group është përfaqësues i autorizuar dhe shpërndarës i brendeve të njohura vendase dhe ndërkombëtare në fushën e birrës dhe pijeve joalkoolike.",
+    "q2": "Në cilat rajone kryeni shpërndarjen?",
+    "a2": "Mbulojmë të gjithë Maqedoninë e Veriut — Shkupin dhe jashtë Shkupit, përfshirë marketet, supermarketet, dyqanet e pijeve alkoolike dhe sektorin HORECA.",
+    "q3": "Si mund të bëhem partner i NIVS Group?",
+    "a3": "Na kontaktoni përmes faqes sonë të kontaktit ose drejtpërdrejt me email. Ekipi ynë do t'ju kontaktojë sa më shpejt të jetë e mundur.",
+    "q4": "A importoni produktet drejtpërdrejt?",
+    "a4": "Po, NIVS Group kryen import të drejtpërdrejtë të produkteve, duke garantuar origjinalitet dhe cilësi të verifikuar.",
     "q5": "Sa shpejt kryhen dorëzimet?",
-    "a5": "Ofrojmë logjistikë të rregullt dhe profesionale me qasje fleksibile për secilin klient, varësisht nga kërkesat e klientit.",
+    "a5": "Sigurojmë logjistikë të rregullt dhe profesionale me qasje fleksibile për çdo klient, në varësi të kërkesave të klientit.",
     "q6": "A ofroni kushte individuale bashkëpunimi?",
-    "a6": "Për kushte individuale të bashkëpunimit, na kontaktoni në emailin tonë."
+    "a6": "Për çdo bashkëpunim individual, na kontaktoni në emailin tonë."
   },
   "footer": {
-    "copyright": "© {year} NIVS Group. Të gjitha të drejtat e rezervuara."
+    "copyright": "© {year} NIVS Group. Të gjitha të drejtat e rezervuara.",
+    "quickLinks": "Linqe të shpejta",
+    "poweredBy": "Mundësuar nga"
   },
   "common": {
     "loading": "Duke u ngarkuar…",

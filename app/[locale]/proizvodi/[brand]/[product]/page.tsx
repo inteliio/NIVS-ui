@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import ProductGallery from '@/components/ProductGallery';
+import PageTitleAccent from '@/components/PageTitleAccent';
 import brandsData from '@/data/brands.json';
 import productsData from '@/data/products.json';
 
@@ -70,10 +71,17 @@ export default async function ProductPage({
       <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
         <ProductGallery images={images} primaryAlt={productName} />
         <div className="min-w-0">
-          <h1 className="text-2xl font-bold text-foreground sm:text-3xl">{productName}</h1>
+          <PageTitleAccent />
+          <h1 className="mt-4 text-2xl font-bold text-foreground sm:text-3xl">{productName}</h1>
           {productDescription && (
             <p className="mt-3 text-sm text-muted-foreground sm:mt-4 sm:text-base">{productDescription}</p>
           )}
+          <Link
+            href="/kontakt"
+            className="mt-6 inline-flex min-h-[2.75rem] items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-primary-hover sm:mt-8"
+          >
+            {t('requestQuote')}
+          </Link>
           {nutrition.length > 0 && (
             <div className="mt-6 sm:mt-8">
               <h2 className="mb-3 text-base font-semibold text-foreground sm:mb-4 sm:text-lg">

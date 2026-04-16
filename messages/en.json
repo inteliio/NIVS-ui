@@ -4,7 +4,11 @@
     "products": "Products",
     "about": "About Us",
     "contact": "Contact",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "mainNavigation": "Main navigation"
   },
   "home": {
     "title": "NIVS Group",
@@ -12,6 +16,8 @@
     "aboutTitle": "About us",
     "aboutShort": "NIVS Group is specialized in import and distribution, serving markets and local stores with a wide range of products. We are committed to quality and reliable partnerships.",
     "aboutLink": "Learn more",
+    "heroSeeMore": "See more",
+    "heroSlideGoTo": "Go to slide {n}",
     "stats": {
       "clients": "Clients",
       "products": "Products",
@@ -22,8 +28,10 @@
   },
   "products": {
     "title": "Our brands",
+    "downloadCatalogue": "Download catalogue",
     "viewProducts": "View products",
     "noProductsYet": "No products for this brand yet.",
+    "requestQuote": "Request a quote",
     "nutritionalValues": "Nutritional values",
     "tablePer": "Per",
     "tableValue": "Value",
@@ -128,34 +136,49 @@
   },
   "about": {
     "title": "About Us",
-    "content": "NIVS Group is a company specialized in import and distribution, serving markets and local stores with a wide range of products. With years of experience in the industry, we are committed to quality and reliable partnerships."
+    "lead": "We connect leading beverage brands with retailers and the HORECA sector across North Macedonia.",
+    "content": "NIVS Group was founded in 2023 with a clear vision — to connect leading global brands with the Macedonian market.\nWe work with dedication, responsibility, and professionalism toward every partner and client.\nAs an authorized representative and distributor of renowned domestic and international brands in beer and soft drinks, we ensure uninterrupted supply and constant availability of products throughout North Macedonia.\nOur work is based on:\n● Direct import and verified quality\n● Timely and professional logistics\n● Competitive terms and reliable deliveries\n● An individual approach to every client\nWe cooperate with retail chains, wholesale companies, and the HORECA sector — offering stability and support at every step.\nWe believe that real success is built gradually — through trust, quality, and lasting relationships.",
+    "ctaPrompt": "Would you like to work with us?",
+    "cta": "Contact us"
   },
   "contact": {
-    "title": "Contact",
-    "department": "Department",
-    "email": "Email",
-    "phone": "Phone",
-    "marketing": "Marketing",
-    "sales": "Sales",
-    "logistics": "Logistics"
+    "title": "Contact Us",
+    "companyLine": "NIVS GROUP",
+    "companyCity": "Skopje",
+    "addressRegistered": "Address",
+    "addressRegisteredLine": "Volgogradska St. 3/26, Karposh",
+    "addressOffice": "Office address",
+    "addressOfficeLine": "Partizanski Odredi Blvd. 18",
+    "mapEmbedRegistered": "Map of registered office address",
+    "mapEmbedOffice": "Map of office address",
+    "openInGoogleMaps": "Open in Google Maps",
+    "contactsHeading": "Contacts",
+    "phoneLabelFinance": "Finance",
+    "phoneLabelCommerce": "Commerce and distribution",
+    "phoneLabelOffers": "Offers and information",
+    "phoneDisplayFinance": "070 306 106",
+    "phoneDisplayCommerce": "070 228 220",
+    "phoneDisplayOffers": "070 228 218"
   },
   "faq": {
     "title": "Frequently asked questions",
-    "q1": "How can I place an order?",
-    "a1": "Contact our sales department by email or phone. We will guide you through the process.",
-    "q2": "What are your delivery terms?",
-    "a2": "We deliver nationwide. Terms depend on order size and location. Contact logistics for details.",
-    "q3": "Do you work with new retailers?",
-    "a3": "Yes. We welcome new partners. Get in touch with our sales or marketing team to discuss options.",
+    "q1": "Which products does NIVS Group distribute?",
+    "a1": "NIVS Group is an authorized representative and distributor of renowned domestic and international brands in beer and soft drinks.",
+    "q2": "Which regions do you cover?",
+    "a2": "We cover all of North Macedonia — Skopje and beyond, including supermarkets, liquor stores, and the HORECA sector.",
+    "q3": "How can I become a partner of NIVS Group?",
+    "a3": "Contact us through our contact page or directly by email. Our team will get back to you as soon as possible.",
     "q4": "Do you import products directly?",
-    "a4": "Yes, NIVS Group imports products directly, ensuring authenticity and verified quality.",
+    "a4": "Yes. NIVS Group imports products directly, which allows us to guarantee authenticity and verified quality.",
     "q5": "How quickly are deliveries made?",
-    "a5": "We provide timely and professional logistics with a flexible approach for each client, depending on client requirements.",
-    "q6": "Do you offer individual cooperation terms?",
-    "a6": "For individual cooperation terms, contact us via our email."
+    "a5": "We provide timely, professional logistics with a flexible approach for each client, depending on their requirements.",
+    "q6": "Do you offer individual terms of cooperation?",
+    "a6": "For individual cooperation arrangements, please contact us by email."
   },
   "footer": {
-    "copyright": "© {year} NIVS Group. All rights reserved."
+    "copyright": "© {year} NIVS Group. All rights reserved.",
+    "quickLinks": "Quick links",
+    "poweredBy": "Powered by"
   },
   "common": {
     "loading": "Loading…",
