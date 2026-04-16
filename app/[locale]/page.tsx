@@ -21,6 +21,8 @@ const HERO_SLIDES = [
   { src: "/images/hero/FrutisanBaner.jpg", alt: "Frutisan banner" },
 ];
 
+const SECTION_DIVIDER_LINE_CLASS = "mx-auto mb-6 h-[2px] w-[100%] bg-gradient-to-r from-transparent via-[#2C4F7C]/70 to-transparent sm:mb-8";
+
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -30,8 +32,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <div className="-mt-14">
         <HeroSlider slides={HERO_SLIDES} />
       </div>
-      <AboutSection />
       <StatsSection />
+      <AboutSection />
       <PartnersSection />
       <TestimonialsSection />
     </>
@@ -62,9 +64,9 @@ async function StatsSection() {
   } as const;
 
   return (
-    <section className="border-y border-border bg-muted py-8 sm:py-12">
+    <section className="border-y border-border bg-muted py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-6 h-[2px] w-[100%] bg-gradient-to-r from-transparent via-[#2C4F7C]/70 to-transparent sm:mb-8" />
+        {/* <div className={SECTION_DIVIDER_LINE_CLASS} /> */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-8">
           {STATS.map(({ key, value }) => (
             <div key={key} className="flex items-center justify-center gap-2 text-left sm:gap-4">
@@ -91,8 +93,9 @@ async function PartnersSection() {
   const partners = partnersData as Partner[];
   const marqueePartners = [...partners, ...partners];
   return (
-    <section className="border-y border-border/50 bg-surface py-10 sm:py-16">
+    <section className="border-y border-border bg-surface py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className={SECTION_DIVIDER_LINE_CLASS} />
         <h2 className="text-center text-xl font-semibold text-foreground sm:text-2xl">{t("partners")}</h2>
         <div className="partners-fade-mask mt-6 overflow-hidden py-2 sm:mt-8">
           <div className="partners-marquee-track">
@@ -103,6 +106,7 @@ async function PartnersSection() {
             ))}
           </div>
         </div>
+        {/* <div className={SECTION_DIVIDER_LINE_CLASS} /> */}
       </div>
     </section>
   );
