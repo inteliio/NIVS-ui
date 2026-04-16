@@ -111,6 +111,18 @@
           "name": "Frutisan 100% Apple — 200 ml (glass)",
           "description": "Apple 100% juice in a 200 ml glass bottle. Product photo not available yet. Typical nutrition per 100 ml; use the label for exact values."
         }
+      },
+      "fix": {
+        "fix-hellas-glass-330": {
+          "name": "FIX Hellas — 330 ml (glass)",
+          "description": "FIX Hellas is Greece’s historic premium lager—deep golden colour, balanced bitterness, and a clean finish. About 5% ABV. Heritage dating to 1864; brewed by Olympic Brewery. Nutritional values per 100 ml per manufacturer declaration (Olympic Brewery / FIX), as published for FIX Hellas."
+        }
+      },
+      "nissos": {
+        "nissos-pilsner-glass-330": {
+          "name": "Nissos Pilsner — 330 ml (glass)",
+          "description": "Bohemian-style pilsner from the Cyclades Microbrewery on Tinos—crisp, with noble-hop character and a dry finish. About 5% ABV. Unpasteurised, naturally carbonated craft beer. Nutritional values per 100 ml per NISSOS / Cyclades Microbrewery and Olympic Brewery product information."
+        }
       }
     }
   },

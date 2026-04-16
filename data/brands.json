@@ -10,5 +10,23 @@
     "name": "Frutisan",
     "slug": "frutisan",
     "logo": "/images/brands/frutisanLogo.svg"
+  },
+  {
+    "id": "Kaiser",
+    "name": "Kaiser",
+    "slug": "kaiser",
+    "logo": "/images/brands/kaisser_logocrno.svg"
+  },
+  {
+    "id": "FIX",
+    "name": "FIX",
+    "slug": "fix",
+    "logo": "/images/brands/fix_logo-boja.svg"
+  },
+  {
+    "id": "Nissos",
+    "name": "Nissos",
+    "slug": "nissos",
+    "logo": "/images/brands/nissos_logoboja.svg"
   }
 ]

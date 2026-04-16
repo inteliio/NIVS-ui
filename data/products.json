@@ -240,5 +240,38 @@
         { "labelKey": "salt", "value": "7.8 mg", "perKey": "per100ml" }
       ]
     }
+  ],
+  "kaiser": [],
+  "fix": [
+    {
+      "id": "fix-hellas-glass-330",
+      "slug": "fix-hellas-glass-330",
+      "images": ["/images/products/fix/FixbeerProduct.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "160 kJ / 38 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "2.3 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "0.4 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "<0.5 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "0 g", "perKey": "per100ml" }
+      ]
+    }
+  ],
+  "nissos": [
+    {
+      "id": "nissos-pilsner-glass-330",
+      "slug": "nissos-pilsner-glass-330",
+      "images": ["/images/products/nissos/nissosProduct.jpg"],
+      "nutrition": [
+        { "labelKey": "energy", "value": "167 kJ / 40 kcal", "perKey": "per100ml" },
+        { "labelKey": "fat", "value": "0 g", "perKey": "per100ml" },
+        { "labelKey": "saturatedFat", "value": "0 g", "perKey": "per100ml" },
+        { "labelKey": "carbohydrates", "value": "2.4 g", "perKey": "per100ml" },
+        { "labelKey": "sugars", "value": "0.3 g", "perKey": "per100ml" },
+        { "labelKey": "protein", "value": "<0.5 g", "perKey": "per100ml" },
+        { "labelKey": "salt", "value": "0 g", "perKey": "per100ml" }
+      ]
+    }
   ]
 }

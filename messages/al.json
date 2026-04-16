@@ -111,6 +111,18 @@
           "name": "Frutisan 100% mollë — 200 ml (qelq)",
           "description": "Lëng molle 100% në shishe qelqi 200 ml. Foto e produktit ende nuk është e disponueshme. Vlera tipike për 100 ml; për vlera të sakta përdorni etiketën."
         }
+      },
+      "fix": {
+        "fix-hellas-glass-330": {
+          "name": "FIX Hellas — 330 ml (qelq)",
+          "description": "FIX Hellas është lager premium historik i Greqisë—ngjyrë e thellë e artë, hidhësi e balancuar dhe përfundim i pastër. Rreth 5% vol. Trashëgimi që nga 1864; prodhohet nga Olympic Brewery. Vlerat ushqyese për 100 ml sipas deklaratës së prodhuesit (Olympic Brewery / FIX), siç publikohet për FIX Hellas."
+        }
+      },
+      "nissos": {
+        "nissos-pilsner-glass-330": {
+          "name": "Nissos Pilsner — 330 ml (qelq)",
+          "description": "Pilsner në stilin bohem nga Cyclades Microbrewery në Tinos—i mprehtë, me karakter nobil hopi dhe përfundim të thatë. Rreth 5% vol. Birrë artizanale e pagazuar natyrisht. Vlerat për 100 ml sipas NISSOS / Cyclades Microbrewery dhe Olympic Brewery."
+        }
       }
     }
   },
